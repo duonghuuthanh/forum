@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            function giai() {
+                var a = parseFloat(document.getElementById("aId").value);
+                var b = parseFloat(document.getElementById("bId").value);
+                if (a == 0)
+                    if (b == 0)
+                        alert("Phương trình vô số nghiệm");
+                    else
+                        alert("Phương trình vô nghiệm");
+                else
+                    alert("x = " + (-b/a));
+            }
+        </script>
+    </head>
+    <body>
+        <h1>ax + b = 0</h1>
+        <input type="text" id="aId" placeholder="Nhập a = " />
+        <br><br>
+        <input type="text" id="bId" placeholder="Nhập b = " />
+        <br><br>
+        <input type="button" value="Giải" onclick="giai()" />
+    </body>
+</html>
